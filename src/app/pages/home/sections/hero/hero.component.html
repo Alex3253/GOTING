@@ -1,0 +1,67 @@
+<section
+  id="hero"
+  class="relative flex min-h-screen flex-col justify-between overflow-hidden"
+  style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV0YiJrJEMUmHvLJI3H_HSHbdA8WgssJKSjvab9Tk7tioGFHgY7zRLdPaZ&s=10'); background-size: cover; background-position: center;"
+>
+  <!-- Overlay oscuro degradado -->
+  <div class="absolute inset-0 bg-linear-to-r from-slate-950/90 via-slate-900/75 to-slate-900/40"></div>
+
+  <!-- Contenido principal -->
+  <div class="relative z-10 mx-auto w-full max-w-7xl flex-1 px-6 pt-32 pb-16 flex flex-col justify-center">
+    <!-- Badge -->
+    <span class="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-sm font-medium text-white backdrop-blur-sm">
+      <span class="h-2 w-2 rounded-full bg-orange-400"></span>
+      Ingeniería Civil de Excelencia
+    </span>
+
+    <!-- Título -->
+    <h1 class="max-w-3xl text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-white">
+      Ingeniería
+      <span class="text-orange-400">especializada</span>
+      y soluciones Geoespaciales
+    </h1>
+
+    <!-- Subtítulo -->
+    <p class="mt-6 max-w-xl text-lg leading-relaxed text-slate-300">
+      Alta precisión para infraestructura, construcción, agricultura, minería, telecomunicaciones,
+      energía renovable e industria.
+    </p>
+
+    <!-- CTAs -->
+    <div class="mt-10 flex flex-wrap items-center gap-4">
+      <a
+        routerLink="/servicios"
+        class="inline-flex items-center gap-2 rounded-full border-2 border-white px-7 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-white hover:text-slate-900"
+      >
+        Ver Servicios →
+      </a>
+      <a
+        routerLink="/contacto"
+        class="inline-flex items-center gap-2 rounded-full bg-orange-500 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-900/40 transition-colors hover:bg-orange-400"
+      >
+        Nuestros Proyectos
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="mt-16 flex flex-wrap items-center gap-10 lg:gap-16">
+      @for (stat of stats; track stat.label) {
+        <div>
+          <p class="text-4xl font-bold text-white">{{ stat.value }}</p>
+          <p class="mt-1 text-sm text-slate-400">{{ stat.label }}</p>
+        </div>
+      }
+    </div>
+  </div>
+
+  <!-- Strip de clientes -->
+  <div class="relative z-10 border-t border-white/10 bg-slate-950/60 backdrop-blur-sm">
+    <div class="mx-auto max-w-7xl px-6 py-6">
+      <div class="flex flex-wrap items-center justify-between gap-6 opacity-60 grayscale">
+        @for (client of clients; track client) {
+          <span class="text-sm font-bold uppercase tracking-widest text-white">{{ client }}</span>
+        }
+      </div>
+    </div>
+  </div>
+</section>
