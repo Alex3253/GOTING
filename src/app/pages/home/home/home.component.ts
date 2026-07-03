@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Hero } from '../sections/hero/hero.component';
+import { Hero } from '../sections/main/main.component';
 import { CtaBanner } from '../sections/cta-banner/cta-banner.component';
 
 @Component({

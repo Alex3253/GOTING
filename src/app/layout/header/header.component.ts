@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -7,4 +7,8 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class Header {}
+export class Header {
+  protected readonly menuAbierto = signal(false);
+  protected toggleMenu() { this.menuAbierto.update(v => !v); }
+  protected cerrarMenu() { this.menuAbierto.set(false); }
+}

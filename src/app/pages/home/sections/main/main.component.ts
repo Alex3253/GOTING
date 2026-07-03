@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
-  selector: 'app-hero',
+  selector: 'app-main',
   imports: [RouterLink],
-  templateUrl: './hero.component.html',
-  styleUrl: './hero.component.css',
+  templateUrl: './main.component.html',
+  styleUrl: './main.component.css',
 })
 export class Hero {
   protected readonly stats = [
