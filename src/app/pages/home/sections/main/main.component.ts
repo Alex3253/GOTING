@@ -16,11 +16,9 @@ export class Portada implements OnInit, OnDestroy {
   ];
 
   protected readonly heroImages = [
-    '/topografia.png',
-    '/imagen2.jpg',
-    '/imagen1.jpg',
-    '/topografia.png',
-    '/imagen2.jpg',
+    '/img-dr-1.jpeg',
+    '/img-dr-2.jpg',
+    '/img-dr-3.png',
   ];
   protected readonly activeSlide = signal(0);
   private slideTimer?: ReturnType<typeof setInterval>;

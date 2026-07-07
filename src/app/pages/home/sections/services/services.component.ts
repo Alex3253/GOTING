@@ -67,7 +67,7 @@ export class Services {
       description: 'Caracterización de cuerpos de agua para proyectos de ingeniería.',
       tech: 'TECNOLOGÍA ADCP',
       nuevo: true,
-      imagen: null,
+      imagen: '/Batimetría.jpeg',
       detail: {
         intro: 'Levantamiento y análisis de cuerpos de agua mediante medición de profundidades y evaluación de caudales para proyectos de ingeniería, infraestructura y gestión de recursos hídricos.',
         aplicaciones: null,

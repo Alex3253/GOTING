@@ -3,11 +3,11 @@
   <div class="absolute inset-0">
     @for (img of images(); track $index) {
       <img [src]="img" alt=""
-        class="absolute inset-0 h-full w-full object-cover object-center opacity-40 transition-opacity duration-1000 ease-in-out"
-        [class.opacity-40]="activeSlide() === $index"
+        class="absolute inset-0 h-full w-full object-cover object-center opacity-90 transition-opacity duration-1000 ease-in-out"
+        [class.opacity-90]="activeSlide() === $index"
         [class.opacity-0]="activeSlide() !== $index" />
     }
-    <div class="absolute inset-0 bg-gradient-to-t from-[#0a1628] via-[#0a1628]/70 to-[#0a1628]/20"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[#0a1628]/80 via-[#0a1628]/25 to-transparent"></div>
   </div>
 
   <div class="relative z-10 mx-auto w-full max-w-7xl px-6">

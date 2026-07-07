@@ -4,10 +4,10 @@
     @for (img of heroImages; track $index) {
       <img [src]="img" alt=""
         class="absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ease-in-out"
-        [class.opacity-60]="activeSlide() === $index"
+        [class.opacity-90]="activeSlide() === $index"
         [class.opacity-0]="activeSlide() !== $index" />
     }
-    <div class="absolute inset-0 bg-gradient-to-r from-[#0a1628]/75 via-[#0a1628]/45 to-[#0a1628]/15"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#0a1628]/45 via-[#0a1628]/20 to-transparent"></div>
   </div>
 
   <div class="absolute bottom-6 left-1/2 z-10 flex -translate-x-1/2 gap-2">
