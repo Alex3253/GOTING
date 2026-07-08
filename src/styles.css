@@ -1,7 +1,11 @@
 ﻿@import 'tailwindcss';
 
+@theme {
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
 html { scroll-behavior: smooth; }
-body { background: #fff; color: #0f172a; }
+body { background: #fff; color: #0f172a; font-family: 'Inter', ui-sans-serif, system-ui, sans-serif; }
 
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: #f1f5f9; }

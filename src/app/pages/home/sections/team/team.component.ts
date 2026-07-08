@@ -15,7 +15,7 @@ export class Team {
       cip: 'CIP 304352',
       telefono: '942 678 678',
       email: 'consultas.goting@gmail.com',
-      foto: 'persona-1.png',
+      foto: 'equipo/Brayam.png',
     },
     {
       name: 'Ing. Noelia Fernández Gavilán',
@@ -23,7 +23,7 @@ export class Team {
       cip: null,
       telefono: '930 945 908',
       email: 'consultas.goting@gmail.com',
-      foto: 'persona-2.png',
+      foto: 'equipo/Noelia.png',
     },
     {
       name: 'Ing. Jesús Ramos',
@@ -31,7 +31,7 @@ export class Team {
       cip: null,
       telefono: null,
       email: null,
-      foto: 'persona-3.png',
+      foto: 'equipo/Jesus.png',
     },
     {
       name: 'Ing. Yermay Berrocal',
@@ -39,7 +39,7 @@ export class Team {
       cip: null,
       telefono: null,
       email: null,
-      foto: 'persona-4.png',
+      foto: 'equipo/YERMAY.png',
     },
     {
       name: 'Ing. Jorge Astuhuaman',
@@ -47,7 +47,7 @@ export class Team {
       cip: null,
       telefono: null,
       email: null,
-      foto: 'persona-5.png',
+      foto: 'equipo/JORGE.png',
     },
   ];
 }

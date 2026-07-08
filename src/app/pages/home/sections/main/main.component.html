@@ -1,9 +1,10 @@
 <section id="hero" class="relative -mt-20 flex min-h-screen flex-col justify-between overflow-hidden bg-[#0a1628]">
 
   <div class="absolute inset-0">
-    @for (img of heroImages; track $index) {
-      <img [src]="img" alt=""
-        class="absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ease-in-out"
+    @for (img of heroImages; track img.src) {
+      <img [src]="img.src" alt=""
+        class="absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-in-out"
+        [class]="img.position"
         [class.opacity-90]="activeSlide() === $index"
         [class.opacity-0]="activeSlide() !== $index" />
     }
@@ -14,8 +15,7 @@
     @for (img of heroImages; track $index) {
       <button type="button" aria-label="Ir a la imagen {{ $index + 1 }}" (click)="goToSlide($index)"
         class="h-1.5 rounded-full transition-all duration-300"
-        [class.w-6]="activeSlide() === $index" [class.bg-teal-400]="activeSlide() === $index"
-        [class.w-1.5]="activeSlide() !== $index" [class.bg-white/40]="activeSlide() !== $index">
+        [class]="activeSlide() === $index ? 'w-6 bg-teal-400' : 'w-1.5 bg-white/40'">
       </button>
     }
   </div>
@@ -45,17 +45,17 @@
         class="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-7 py-3.5 text-sm font-semibold text-white backdrop-blur-sm hover:bg-white/20 transition-all duration-300">
         Ver Servicios →
       </a>
-      <a routerLink="/contacto"
+      <a routerLink="/nosotros"
         class="inline-flex items-center gap-2 rounded-full bg-teal-500 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-500/30 hover:bg-teal-400 transition-all duration-300">
-        Nuestros Proyectos
+        Nosotros
       </a>
     </div>
 
-    <div class="reveal reveal-d4 mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8 border-t border-white/10 pt-10">
+    <div class="reveal reveal-d4 mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8 rounded-2xl border border-white/10 bg-[#0a1628]/55 backdrop-blur-md px-6 py-8 sm:px-8">
       @for (stat of stats; track stat.label) {
         <div>
           <p class="text-4xl lg:text-5xl font-black text-white">{{ stat.value }}</p>
-          <p class="mt-1.5 text-[10px] font-semibold tracking-[0.25em] text-slate-400 uppercase">{{ stat.label }}</p>
+          <p class="mt-1.5 text-[10px] font-semibold tracking-[0.25em] text-slate-300 uppercase">{{ stat.label }}</p>
         </div>
       }
     </div>

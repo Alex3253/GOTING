@@ -21,7 +21,6 @@ export class Services {
   protected readonly services = [
     {
       num: '01',
-      icon: '🛸',
       tab: 'Fotogrametría Aérea',
       title: 'Fotogrametría Aérea de Alta Resolución',
       description: 'Áreas extensas, ortomosaicos, control volumétrico y monitoreo en tiempo real.',
@@ -61,7 +60,6 @@ export class Services {
     },
     {
       num: '02',
-      icon: '🌊',
       tab: 'Batimetría y Caudales',
       title: 'Batimetría y Medición de Caudales con ADCP',
       description: 'Caracterización de cuerpos de agua para proyectos de ingeniería.',
@@ -85,7 +83,6 @@ export class Services {
     },
     {
       num: '03',
-      icon: '📡',
       tab: 'Topografía LiDAR',
       title: 'Inspección & Topografía con Tecnología LiDAR',
       description: 'Líneas de alta tensión, modelado 3D y penetración de vegetación.',
@@ -99,16 +96,15 @@ export class Services {
         indicadores: null,
         entregables: null,
         camposAplicacion: [
-          { icono: '🏗️', titulo: 'Líneas de alta tensión', desc: 'Detección de catenarias y distancias de seguridad a la vegetación.' },
-          { icono: '🌊', titulo: 'Modelamiento hidráulico y cuencas', desc: 'Base de puntos para simulación de flujos e inundaciones.' },
-          { icono: '🏠', titulo: 'Estructuras complejas y canteras', desc: 'Modelado 3D sin detener la operación del cliente.' },
+          { titulo: 'Líneas de alta tensión', desc: 'Detección de catenarias y distancias de seguridad a la vegetación.' },
+          { titulo: 'Modelamiento hidráulico y cuencas', desc: 'Base de puntos para simulación de flujos e inundaciones.' },
+          { titulo: 'Estructuras complejas y canteras', desc: 'Modelado 3D sin detener la operación del cliente.' },
         ],
         ventaja: 'Filtrado avanzado de la nube de puntos + validación con <strong class="text-slate-900">Trimble Business Center (TBC).</strong>',
       },
     },
     {
       num: '04',
-      icon: '🌿',
       tab: 'Agricultura de Precisión',
       title: 'Agricultura de Precisión Multiespectral',
       description: 'Índices NDVI/NDRE, RGB, conteo de plantas y diagnóstico de estrés.',
@@ -144,16 +140,15 @@ export class Services {
           },
         ],
         indicadoresEntregables: [
-          { icono: '🍃', titulo: 'Vigor vegetal', sub: 'NDVI · NDRE · GNDVI · NDWI' },
-          { icono: '💧', titulo: 'Estrés hídrico y nutricional temprano', sub: '' },
-          { icono: '🌱', titulo: 'Conteo y georreferenciación de plantas', sub: '' },
-          { icono: '⚠️', titulo: 'Severidad de plagas', sub: '(focos de infección)' },
+          { titulo: 'Vigor vegetal', sub: 'NDVI · NDRE · GNDVI · NDWI' },
+          { titulo: 'Estrés hídrico y nutricional temprano', sub: '' },
+          { titulo: 'Conteo y georreferenciación de plantas', sub: '' },
+          { titulo: 'Severidad de plagas', sub: '(focos de infección)' },
         ],
       },
     },
     {
       num: '05',
-      icon: '📍',
       tab: 'Geodesia Oficial',
       title: 'Geodesia Oficial y Certificación de Puntos de Control',
       description: 'Monumentación de puntos geodésicos de órdenes "B" y "C" certificados ante IGN.',
@@ -197,7 +192,6 @@ export class Services {
     },
     {
       num: '06',
-      icon: '✏️',
       tab: 'Topografía de Detalle',
       title: 'Topografía de Detalle e Infraestructura',
       description: 'Planialtimetría, replanteos arquitectónicos, sanitarios y eléctricos.',
@@ -234,7 +228,7 @@ export class Services {
       },
     },
     {
-      num: '07', icon: '⊕', tab: 'Alquiler y Capacitación', title: 'Otros: Alquiler y Capacitación',
+      num: '07', tab: 'Alquiler y Capacitación', title: 'Otros: Alquiler y Capacitación',
       description: 'Formación especializada y alquiler de equipos topográficos.',
       tech: 'FLOTA CERTIFICADA', nuevo: false, detail: null, imagen: null,
     },
