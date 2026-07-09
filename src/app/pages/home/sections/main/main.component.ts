@@ -17,7 +17,7 @@ export class Portada implements OnInit, OnDestroy {
 
   protected readonly heroImages = [
     { src: '/img-dr-1.jpeg', position: 'object-center max-sm:object-[100%_50%]' },
-    { src: '/img-dr-2.jpg', position: 'object-center' },
+    { src: '/img-dr-2.jpg', position: 'object-center max-sm:object-[42%_50%]' },
     { src: '/img-dr-3.png', position: 'object-[70%_25%]' },
   ];
   protected readonly activeSlide = signal(0);
