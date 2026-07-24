@@ -38,14 +38,22 @@ export class Services {
       imagen: '/servicios/01-servicios.png',
       cumplimiento: {
         titulo: 'Cumplimiento Normativo Garantizado',
-        mensaje: 'Bajo los protocolos de la Autoridad Nacional del Agua (ANA) y estándares hidrográficos internacionales (IHO), entregamos reportes válidos para estudios de disponibilidad hídrica y licencias de uso de agua.',
+        mensaje:
+          'Bajo la Norma Técnica Complementaria N.° 001-2015 de la Dirección General de Aeronáutica Civil (DGAC), operamos con drones registrados y pilotos certificados, garantizando vuelos seguros y autorizados.',
       },
       detail: {
-        intro: 'Captura geoespacial en proyectos de gran envergadura, eliminando largas jornadas de topografía clásica en terreno complejo: menos costos operativos y menos riesgo humano.',
+        intro:
+          'Captura geoespacial en proyectos de gran envergadura, eliminando largas jornadas de topografía clásica en terreno complejo: menos costos operativos y menos riesgo humano.',
         aplicaciones: [
-          { titulo: 'Control volumétrico', desc: 'Movimiento de tierras, stockpiles y tajos abiertos (minería y construcción).' },
+          {
+            titulo: 'Control volumétrico',
+            desc: 'Movimiento de tierras, stockpiles y tajos abiertos (minería y construcción).',
+          },
           { titulo: 'Catastro urbano y rural', desc: 'Saneamiento físico-legal de predios.' },
-          { titulo: 'Monitoreo de obras lineales', desc: 'Carreteras, ductos, vías férreas, canales.' },
+          {
+            titulo: 'Monitoreo de obras lineales',
+            desc: 'Carreteras, ductos, vías férreas, canales.',
+          },
         ],
         proyecto: {
           nombre: 'Proyecto Vientos de Negritos',
@@ -58,9 +66,18 @@ export class Services {
           ],
         },
         indicadores: [
-          { titulo: 'GSD', desc: 'Resolución espacial < 2–5 cm/pixel: identifica elementos mínimos del terreno con nitidez.' },
-          { titulo: 'MDS / MDT', desc: 'Modelos digitales de superficie y terreno con curvas de nivel hasta 0.20 m.' },
-          { titulo: 'Traslape', desc: 'Vuelos con 90% longitudinal / 80% transversal: sin zonas ciegas ni distorsión de bordes.' },
+          {
+            titulo: 'GSD',
+            desc: 'Resolución espacial < 2–5 cm/pixel: identifica elementos mínimos del terreno con nitidez.',
+          },
+          {
+            titulo: 'MDS / MDT',
+            desc: 'Modelos digitales de superficie y terreno con curvas de nivel hasta 0.20 m.',
+          },
+          {
+            titulo: 'Traslape',
+            desc: 'Vuelos con 90% longitudinal / 80% transversal: sin zonas ciegas ni distorsión de bordes.',
+          },
         ],
         entregables: [
           { formato: 'Ortomosaicos georreferenciados', ext: 'TIFF · GeoTIFF · ECW' },
@@ -81,10 +98,12 @@ export class Services {
       imagen: '/Batimetría.jpeg',
       cumplimiento: {
         titulo: 'Cumplimiento Normativo Garantizado',
-        mensaje: 'Bajo los protocolos de la Autoridad Nacional del Agua (ANA) y estándares hidrográficos internacionales (IHO), entregamos reportes válidos para estudios de disponibilidad hídrica y licencias de uso de agua.',
+        mensaje:
+          'Bajo los protocolos de la Autoridad Nacional del Agua (ANA), la Dirección General de Capitanías y Guardacostas (DICAPI - NTH-45) y estándares hidrográficos internacionales (IHO), entregamos reportes válidos para estudios de disponibilidad hídrica y licencias de uso de agua.',
       },
       detail: {
-        intro: 'Levantamiento y análisis de cuerpos de agua mediante medición de profundidades y evaluación de caudales para proyectos de ingeniería, infraestructura y gestión de recursos hídricos.',
+        intro:
+          'Levantamiento y análisis de cuerpos de agua mediante medición de profundidades y evaluación de caudales para proyectos de ingeniería, infraestructura y gestión de recursos hídricos.',
         aplicaciones: null,
         proyecto: null,
         indicadores: null,
@@ -108,20 +127,32 @@ export class Services {
       imagen: '/TopografíaLiDAR.jpg',
       cumplimiento: {
         titulo: 'Cumplimiento Normativo Garantizado',
-        mensaje: 'Operaciones UAS bajo la normativa RAP 101 de la Dirección General de Aeronáutica Civil (DGAC), garantizando vuelos seguros y autorizados sobre infraestructura crítica.',
+        mensaje:
+          'Operaciones UAS bajo la normativa RAP 101 de la Dirección General de Aeronáutica Civil (DGAC), garantizando vuelos seguros y autorizados sobre infraestructura crítica.',
       },
       detail: {
-        intro: 'Escaneo láser dinámico que emite miles de pulsos por segundo: atraviesa la vegetación densa y captura el terreno desnudo real, con una precisión que la fotogrametría pasiva no alcanza.',
+        intro:
+          'Escaneo láser dinámico que emite miles de pulsos por segundo: atraviesa la vegetación densa y captura el terreno desnudo real, con una precisión que la fotogrametría pasiva no alcanza.',
         aplicaciones: null,
         proyecto: null,
         indicadores: null,
         entregables: null,
         camposAplicacion: [
-          { titulo: 'Líneas de alta tensión', desc: 'Detección de catenarias y distancias de seguridad a la vegetación.' },
-          { titulo: 'Modelamiento hidráulico y cuencas', desc: 'Base de puntos para simulación de flujos e inundaciones.' },
-          { titulo: 'Estructuras complejas y canteras', desc: 'Modelado 3D sin detener la operación del cliente.' },
+          {
+            titulo: 'Líneas de alta tensión',
+            desc: 'Detección de catenarias y distancias de seguridad a la vegetación.',
+          },
+          {
+            titulo: 'Modelamiento hidráulico y cuencas',
+            desc: 'Base de puntos para simulación de flujos e inundaciones.',
+          },
+          {
+            titulo: 'Estructuras complejas y canteras',
+            desc: 'Modelado 3D sin detener la operación del cliente.',
+          },
         ],
-        ventaja: 'Filtrado avanzado de la nube de puntos + validación con Trimble Business Center (TBC).',
+        ventaja:
+          'Filtrado avanzado de la nube de puntos + validación con Trimble Business Center (TBC).',
       },
     },
     {
@@ -131,10 +162,11 @@ export class Services {
       description: 'Índices NDVI/NDRE, RGB, conteo de plantas y diagnóstico de estrés.',
       tech: 'MAVIC 3 MULTIESPECTRAL',
       nuevo: false,
-      imagen: '/AgriculturaP.jpg',
+      imagen: '/servicios/AgriculturaPrecicision.png',
       cumplimiento: null,
       detail: {
-        intro: 'Capturamos la firma espectral del cultivo —información invisible al ojo— y la convertimos en mapas de diagnóstico listos para decidir.',
+        intro:
+          'Capturamos la firma espectral del cultivo —información invisible al ojo— y la convertimos en mapas de diagnóstico listos para decidir.',
         aplicaciones: null,
         proyecto: null,
         indicadores: null,
@@ -179,16 +211,18 @@ export class Services {
       imagen: '/servicios/06-geodesia.png',
       cumplimiento: {
         titulo: 'Cumplimiento Normativo Garantizado',
-        mensaje: 'Puntos geodésicos certificados ante el Instituto Geográfico Nacional (IGN), vinculados a la Red Geodésica Geocéntrica Nacional (REGGEN) y válidos para trámites ante SUNARP.',
+        mensaje:
+          'Puntos geodésicos certificados ante el Instituto Geográfico Nacional (IGN), vinculados a la Red Geodésica Geocéntrica Nacional (REGGEN) y válidos para trámites ante SUNARP.',
       },
       detail: {
-        intro: 'Establecimiento, posicionamiento y tramitación oficial de puntos de control vinculados a la Red Geodésica Geocéntrica Nacional (REGGEN) del IGN.',
+        intro:
+          'Establecimiento, posicionamiento y tramitación oficial de puntos de control vinculados a la Red Geodésica Geocéntrica Nacional (REGGEN) del IGN.',
         aplicaciones: null,
         proyecto: {
           nombre: 'Planta Solar Fotovoltaica Malvinas',
           lugar: 'CHAO, LA LIBERTAD · NOVUM SOLAR S.A.C.',
           desc: 'Levantamiento integral sobre +22 ha para energía renovable. Vuelos automatizados con control geodésico RTK y vinculación a red oficial IGN para generar curvas de nivel, modelos digitales del terreno y planos topográficos a escala 1:1000.',
-          imagen: null,
+          imagen: '/servicios/Planta_Solar_Fotovoltaica.png',
           stats: [
             { valor: '22+ ha', label: 'Superficie' },
             { valor: 'CMOS 4/3"', label: 'Ortomosaico' },
@@ -203,7 +237,7 @@ export class Services {
         caracteristicas: [
           {
             titulo: 'Hito Monumentado',
-            desc: 'Marca perenne en concreto f\'c=210 kg/cm² con platina de bronce grabada con código oficial.',
+            desc: "Marca perenne en concreto f'c=210 kg/cm² con platina de bronce grabada con código oficial.",
           },
           {
             titulo: 'GNSS',
@@ -223,13 +257,15 @@ export class Services {
       description: 'Planialtimetría, replanteos arquitectónicos, sanitarios y eléctricos.',
       tech: 'ESTACIÓN TOTAL / NIVEL',
       nuevo: false,
-      imagen: '/servicios/09-triangulacion.png',
+      imagen: '/servicios/TopografiaDetalle.jpeg',
       cumplimiento: {
         titulo: 'Cumplimiento Normativo Garantizado',
-        mensaje: 'Bajo la NTC-001-2015 y la Ley N.° 30340. Generamos planos compatibles con los procedimientos de SUNARP, Gobiernos Regionales y Municipalidades.',
+        mensaje:
+          'Bajo la NTC-001-2015 y la Ley N.° 30340. Generamos planos compatibles con los procedimientos de SUNARP, Gobiernos Regionales y Municipalidades.',
       },
       detail: {
-        intro: 'Cuadrillas con escáner láser 3D, estación total y nivel diferencial donde el sensor aéreo encuentra límites y se exige precisión milimétrica.',
+        intro:
+          'Cuadrillas con escáner láser 3D, estación total y nivel diferencial donde el sensor aéreo encuentra límites y se exige precisión milimétrica.',
         aplicaciones: null,
         proyecto: null,
         indicadores: null,
@@ -258,9 +294,38 @@ export class Services {
       },
     },
     {
-      num: '07', tab: 'Alquiler y Capacitación', title: 'Otros: Alquiler y Capacitación',
+      num: '07',
+      tab: 'Alquiler y Capacitación',
+      title: 'Otros: Alquiler y Capacitación',
       description: 'Formación especializada y alquiler de equipos topográficos.',
-      tech: 'FLOTA CERTIFICADA', nuevo: false, detail: null, imagen: '/servicios/08-capacitacion.png', cumplimiento: null,
+      tech: 'FLOTA CERTIFICADA',
+      nuevo: false,
+      imagen: '/servicios/08-capacitacion.png',
+      cumplimiento: null,
+      detail: {
+        intro: 'Contamos con una flota de equipos topográficos disponible para alquiler, además de programas de capacitación técnica orientados a fortalecer las competencias de campo y gabinete de tu equipo.',
+        aplicaciones: null,
+        proyecto: null,
+        indicadores: null,
+        entregables: null,
+        camposAplicacion: null,
+        ventaja: null,
+        flujoMetodologico: null,
+        indicadoresEntregables: null,
+        caracteristicas: null,
+        bulletPoints: null,
+        proyectosDestacados: null,
+        alquilerCapacitacion: {
+          equipos: ['Estación Total', 'Drones', 'Niveles', 'GPS Diferencial', 'Escáner Láser 3D'],
+          cursos: [
+            'Manejo de drones',
+            'Procesamiento avanzado de datos de drones',
+            'Bootcamp de topografía aplicada',
+            'Cursos ingeniería',
+            'Sistema de información geográfica (SIG)',
+          ],
+        },
+      },
     },
   ];
 }
