@@ -11,9 +11,14 @@ export class PageHeader implements OnInit, OnDestroy {
   title = input.required<string>();
   description = input<string>('');
   images = input<string[]>(['/topografia.png']);
+  positions = input<string[]>([]);
 
   protected readonly activeSlide = signal(0);
   private slideTimer?: ReturnType<typeof setInterval>;
+
+  protected getPosition(i: number): string {
+    return this.positions()[i] ?? 'object-center';
+  }
 
   ngOnInit() {
     if (this.images().length > 1) {
