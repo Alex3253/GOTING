@@ -184,7 +184,7 @@ export class Services {
             num: '02',
             titulo: 'Procesamiento',
             desc: 'Alineación y corrección radiométrica; aísla atmósfera e iluminación.',
-            imagen: '/procesamiento.png',
+            imagen: '/servicios/serviciosC.png',
           },
           {
             num: '03',
