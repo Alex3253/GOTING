@@ -1,4 +1,4 @@
-import { Component, input, signal } from '@angular/core';
+import { Component, ElementRef, input, signal, viewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -19,6 +19,15 @@ export class About {
     this.previewImage.set(null);
   }
 
+  protected readonly propuestaTrack = viewChild<ElementRef<HTMLDivElement>>('propuestaTrack');
+
+  protected scrollPropuesta(direction: 'left' | 'right'): void {
+    const el = this.propuestaTrack()?.nativeElement;
+    if (!el) return;
+    const amount = el.clientWidth * 0.85;
+    el.scrollBy({ left: direction === 'left' ? -amount : amount, behavior: 'smooth' });
+  }
+
   protected readonly misionVision = [
     {
       label: 'Misión',
@@ -35,31 +44,31 @@ export class About {
       num: '01',
       titulo: 'Estándares PMI · Agilismo',
       desc: 'Gestionamos cada proyecto bajo el marco del PMI y metodologías ágiles, con hitos claros y control total del alcance.',
-      imagen: '/topografia.png',
+      iconBg: 'from-sky-400 to-blue-600',
     },
     {
       num: '02',
       titulo: 'Alineado a IGN y DHN',
       desc: 'Nuestros levantamientos cumplen con los lineamientos oficiales del Instituto Geográfico Nacional y la Dirección de Hidrografía y Navegación.',
-      imagen: null,
+      iconBg: 'from-teal-400 to-emerald-600',
     },
     {
       num: '03',
       titulo: 'Sistema QA/QC en campo',
       desc: 'Protocolos de control y aseguramiento de calidad aplicados en cada etapa de campo y gabinete, minimizando errores y reprocesos.',
-      imagen: null,
+      iconBg: 'from-lime-400 to-green-600',
     },
     {
       num: '04',
       titulo: 'Sensores LiDAR · RGB Multiespectral',
       desc: 'Equipos de última generación con sensores LiDAR, RGB y multiespectrales para capturar datos de alta densidad y precisión.',
-      imagen: null,
+      iconBg: 'from-violet-400 to-purple-600',
     },
     {
       num: '05',
       titulo: 'Cámara CMOS 4/3"',
       desc: 'Sensores de gran formato que permiten ortomosaicos de altísima resolución incluso en condiciones de poca luz.',
-      imagen: null,
+      iconBg: 'from-amber-400 to-orange-600',
     },
   ];
 
