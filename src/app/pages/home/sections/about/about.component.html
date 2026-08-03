@@ -99,7 +99,7 @@
           </button>
         </div>
       </div>
-      <div #propuestaTrack class="flex gap-5 overflow-x-auto pb-2 snap-x snap-mandatory scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+      <div #propuestaTrack class="flex gap-5 overflow-x-auto overflow-y-hidden pb-2 snap-x snap-mandatory scroll-smooth [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
         @for (item of propuestaValor; track item.num) {
           <div class="shrink-0 basis-[78%] sm:basis-[46%] lg:basis-[calc(33.333%-14px)] snap-start rounded-2xl border border-white/10 bg-white/[0.04] p-6 hover:border-teal-400/40 hover:bg-white/[0.07] transition-all duration-200">
             <span class="flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br text-white shadow-lg" [class]="item.iconBg">

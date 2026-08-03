@@ -1,5 +1,5 @@
 import { Component, input, signal } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 import emailjs from '@emailjs/browser';
 
 emailjs.init({ publicKey: 'QgNgViSoAjj4JMx01' });
@@ -21,8 +21,9 @@ export class Appointment {
 
   protected readonly estado = signal<'idle' | 'enviando' | 'ok' | 'error'>('idle');
 
-  protected async enviar(e: Event) {
+  protected async enviar(e: Event, form: NgForm) {
     e.preventDefault();
+    if (form.invalid) return;
     this.estado.set('enviando');
 
     try {

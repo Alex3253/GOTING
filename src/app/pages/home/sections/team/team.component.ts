@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, ElementRef, input, signal, viewChild } from '@angular/core';
 
 @Component({
   selector: 'app-team',
@@ -8,6 +8,25 @@ import { Component, input } from '@angular/core';
 })
 export class Team {
   showHeading = input(true);
+
+  protected readonly teamTrack = viewChild<ElementRef<HTMLDivElement>>('teamTrack');
+
+  protected scrollTeam(direction: 'left' | 'right'): void {
+    const el = this.teamTrack()?.nativeElement;
+    if (!el) return;
+    const amount = el.clientWidth * 0.85;
+    el.scrollBy({ left: direction === 'left' ? -amount : amount, behavior: 'smooth' });
+  }
+
+  protected previewImage = signal<string | null>(null);
+
+  protected openPreview(src: string | null): void {
+    this.previewImage.set(src);
+  }
+
+  protected closePreview(): void {
+    this.previewImage.set(null);
+  }
   protected readonly team = [
     {
       name: 'Ing. Brayam Gómez Zapana',
